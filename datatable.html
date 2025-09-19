@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rwoIxC3A6nJmAzKK5r+L1T+rZz5+5ghvNTR7Ca2bTdM/xutvlph1v8FR6joC5rLt" crossorigin="anonymous">
+
+  <title>Responzivní web</title>
+  <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="./icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+  <script src="./jquery-3.5.1.js"></script> 
+    <script src="./jquery.dataTables.min.js"></script> 
+    
+    <script src="./dataTables.bootstrap5.min.js"></script> 
+    
+     <script>
+     $(document).ready(function() {
+     $('#example').DataTable();
+     } );
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+          <div class="container">
+            <a class="navbar-brand" href="./index.html"></a>
+            <img src="./photos/logoWeb.png" height="75" alt="Logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Domů</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Info.html">O mně</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="./Galerie.html">Galerie</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="form.html">Formulář</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="datatable.html">Tabulka</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container tab">
+            <div class="row">
+              <div class="col">
+                <h2>Tabulka umělců</h2>
+      
+                <table id="example" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Název obrazu</th>
+                            <th>Typ</th>
+                            <th>Umělec</th>
+                            <th>Rok vytvoření</th>
+                            <th>Technika</th>
+                            <th>Cena</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Portrét 1</td>
+                            <td>Portrét</td>
+                            <td>Karolína Cibulková</td>
+                            <td>2021</td>
+                            <td>Olejové barvy</td>
+                            <td>$500</td>
+                        </tr>
+                        <tr>
+                            <td>Abstraktní krajinomalba</td>
+                            <td>Krajina</td>
+                            <td>John Artist</td>
+                            <td>2022</td>
+                            <td>Akrylové barvy</td>
+                            <td>$800</td>
+                        </tr>
+                        <tr>
+                            <td>Zářivé květiny</td>
+                            <td>Abstrakce</td>
+                            <td>Ana Nováková</td>
+                            <td>2020</td>
+                            <td>Digitální malba</td>
+                            <td>$750</td>
+                        </tr>
+                        <tr>
+                            <td>Tajemné pocity</td>
+                            <td>Portrét</td>
+                            <td>David Velký</td>
+                            <td>2018</td>
+                            <td>Olej na plátno</td>
+                            <td>$950</td>
+                        </tr>
+                        <tr>
+                            <td>Urbanistický chaos</td>
+                            <td>Městská krajina</td>
+                            <td>Klára Malá</td>
+                            <td>2021</td>
+                            <td>Smíšená technika</td>
+                            <td>$550</td>
+                        </tr>
+                        <tr>
+                            <td>Stínová harmonie</td>
+                            <td>Abstrakce</td>
+                            <td>Martin Velký</td>
+                            <td>2019</td>
+                            <td>Akryl na plátno</td>
+                            <td>$700</td>
+                        </tr>
+                        <tr>
+                            <td>Jarní melody</td>
+                            <td>Krajina</td>
+                            <td>Lucie Králová</td>
+                            <td>2022</td>
+                            <td>Akvarel</td>
+                            <td>$400</td>
+                        </tr>
+                        <tr>
+                            <td>Příliv a odliv</td>
+                            <td>Mořská krajina</td>
+                            <td>Petr Kocour</td>
+                            <td>2017</td>
+                            <td>Skleněné malby</td>
+                            <td>$820</td>
+                        </tr>
+                        <tr>
+                            <td>Ztracená realita</td>
+                            <td>Abstrakce</td>
+                            <td>Eva Novotná</td>
+                            <td>2016</td>
+                            <td>Digitální kresba</td>
+                            <td>$600</td>
+                        </tr>
+                        <tr>
+                            <td>Západ slunce nad horizontem</td>
+                            <td>Krajina</td>
+                            <td>Marek Svoboda</td>
+                            <td>2020</td>
+                            <td>Olej na plátno</td>
+                            <td>$870</td>
+                        </tr>
+                        <tr>
+                            <td>Světlo ve tmě</td>
+                            <td>Portrét</td>
+                            <td>Barbora Hájková</td>
+                            <td>2021</td>
+                            <td>Tuš a akvarel</td>
+                            <td>$500</td>
+                        </tr>
+                        <tr>
+                            <td>Městská reflexe</td>
+                            <td>Městská krajina</td>
+                            <td>Jiří Novák</td>
+                            <td>2019</td>
+                            <td>Fotografie</td>
+                            <td>$720</td>
+                        </tr>
+                        <tr>
+                            <td>Barevná symfonie</td>
+                            <td>Abstrakce</td>
+                            <td>Marie Konečná</td>
+                            <td>2022</td>
+                            <td>Akryl na plátno</td>
+                            <td>$680</td>
+                        </tr>
+                        <tr>
+                            <td>Zrcadlový svět</td>
+                            <td>Fantasy</td>
+                            <td>Pavel Dvořák</td>
+                            <td>2018</td>
+                            <td>Digitální kresba</td>
+                            <td>$550</td>
+                        </tr>
+                        <tr>
+                            <td>Letní vzpomínky</td>
+                            <td>Krajina</td>
+                            <td>Jan Marek</td>
+                            <td>2023</td>
+                            <td>Akvarel</td>
+                            <td>$480</td>
+                        </tr>
+                        <tr>
+                            <td>Příběh o světle</td>
+                            <td>Abstrakce</td>
+                            <td>Kateřina Černá</td>
+                            <td>2021</td>
+                            <td>Mixed Media</td>
+                            <td>$720</td>
+                        </tr>
+                        <tr>
+                            <td>Harmonie barev</td>
+                            <td>Abstrakce</td>
+                            <td>Adam Zeman</td>
+                            <td>2019</td>
+                            <td>Digitální malba</td>
+                            <td>$670</td>
+                        </tr>
+                        <tr>
+                            <td>Podzimní pohoda</td>
+                            <td>Krajina</td>
+                            <td>Linda Nová</td>
+                            <td>2020</td>
+                            <td>Olej na plátno</td>
+                            <td>$890</td>
+                        </tr>
+                        <tr>
+                            <td>Stíny minulosti</td>
+                            <td>Portrét</td>
+                            <td>Martin Hájek</td>
+                            <td>2017</td>
+                            <td>Tuš</td>
+                            <td>$550</td>
+                        </tr>
+                        <tr>
+                            <td>Vesmírná odysea</td>
+                            <td>Fantasy</td>
+                            <td>Elena Procházková</td>
+                            <td>2022</td>
+                            <td>Digitální kresba</td>
+                            <td>$600</td>
+                        </tr>
+                        <tr>
+                            <td>Záblesky noci</td>
+                            <td>Abstrakce</td>
+                            <td>Miroslav Černý</td>
+                            <td>2018</td>
+                            <td>Akryl na plátno</td>
+                            <td>$600</td>
+                        </tr>
+                        <tr>
+                            <td>Zpola pod vodou</td>
+                            <td>Podvodní scéna</td>
+                            <td>Veronika Doležalová</td>
+                            <td>2021</td>
+                            <td>Digitální malba</td>
+                            <td>$780</td>
+                        </tr>
+                        <tr>
+                            <td>Ranní klid</td>
+                            <td>Krajina</td>
+                            <td>Jaroslav Navrátil</td>
+                            <td>2019</td>
+                            <td>Olej na plátno</td>
+                            <td>$920</td>
+                        </tr>
+                        <tr>
+                            <td>Stíny vesmíru</td>
+                            <td>Fantasy</td>
+                            <td>Adéla Benešová</td>
+                            <td>2016</td>
+                            <td>Digitální kresba</td>
+                            <td>$550</td>
+                        </tr>
+                        <tr>
+                            <td>Zahrada snů</td>
+                            <td>Krajina</td>
+                            <td>Michal Novák</td>
+                            <td>2020</td>
+                            <td>Akvarel</td>
+                            <td>$450</td>
+                        </tr>
+                        <tr>
+                            <td>Příběh stromu</td>
+                            <td>Abstrakce</td>
+                            <td>Lucie Kovaříková</td>
+                            <td>2017</td>
+                            <td>Smíšená technika</td>
+                            <td>$670</td>
+                        </tr>
+                        <tr>
+                            <td>Šepot větru</td>
+                            <td>Krajina</td>
+                            <td>Tomáš Vávra</td>
+                            <td>2022</td>
+                            <td>Akvarel</td>
+                            <td>$520</td>
+                        </tr>
+                        <tr>
+                            <td>Abstraktní horizonty</td>
+                            <td>Abstrakce</td>
+                            <td>Klára Kučerová</td>
+                            <td>2018</td>
+                            <td>Mixed Media</td>
+                            <td>$690</td>
+                        </tr>
+                        <tr>
+                            <td>Záhadná hranice</td>
+                            <td>Fantasy</td>
+                            <td>Robert Holub</td>
+                            <td>2019</td>
+                            <td>Digitální malba</td>
+                            <td>$580</td>
+                        </tr>
+                        <tr>
+                            <td>Podzimní abstrakce</td>
+                            <td>Abstrakce</td>
+                            <td>Nina Kovaříková</td>
+                            <td>2021</td>
+                            <td>Akryl na plátno</td>
+                            <td>$720</td>
+                        </tr>
+                        <tr>
+                            <td>Ve stínu stromu</td>
+                            <td>Krajina</td>
+                            <td>Pavel Kříž</td>
+                            <td>2017</td>
+                            <td>Olej na plátno</td>
+                            <td>$850</td>
+                        </tr>
+                        <tr>
+                            <td>Digitální krajinomalba</td>
+                            <td>Fantasy</td>
+                            <td>Adriana Nováková</td>
+                            <td>2020</td>
+                            <td>Digitální kresba</td>
+                            <td>$620</td>
+                        </tr>
+                        <tr>
+                            <td>City Lights</td>
+                            <td>Městská krajina</td>
+                            <td>Marta Šimáčková</td>
+                            <td>2023</td>
+                            <td>Fotografie</td>
+                            <td>$700</td>
+                        </tr>
+                        <tr>
+                            <td>Podzemní svět</td>
+                            <td>Abstrakce</td>
+                            <td>Daniel Marek</td>
+                            <td>2022</td>
+                            <td>Smíšená technika</td>
+                            <td>$580</td>
+                        </tr>
+                        <tr>
+                            <td>Vlny a písek</td>
+                            <td>Mořská krajina</td>
+                            <td>Jana Kovaříková</td>
+                            <td>2019</td>
+                            <td>Akvarel</td>
+                            <td>$480</td>
+                        </tr>
+                        <tr>
+                            <td>Ve stínu minulosti</td>
+                            <td>Portrét</td>
+                            <td>Petr Novotný</td>
+                            <td>2020</td>
+                            <td>Tuš</td>
+                            <td>$600</td>
+                        </tr>
+                        <tr>
+                            <td>Digitální fantazie</td>
+                            <td>Fantasy</td>
+                            <td>Lucie Doležalová</td>
+                            <td>2018</td>
+                            <td>Digitální kresba</td>
+                            <td>$650</td>
+                        </tr>
+                        <tr>
+                            <td>Jaro ve městě</td>
+                            <td>Městská krajina</td>
+                            <td>Michal Kříž</td>
+                            <td>2016</td>
+                            <td>Olej na plátno</td>
+                            <td>$800</td>
+                        </tr>
+                        <tr>
+                            <td>Záře ve tmě</td>
+                            <td>Abstrakce</td>
+                            <td>Eva Konečná</td>
+                            <td>2021</td>
+                            <td>Akryl na plátno</td>
+                            <td>$720</td>
+                        </tr>
+                        <tr>
+                            <td>Příběh ulice</td>
+                            <td>Městská krajina</td>
+                            <td>Pavel Malý</td>
+                            <td>2017</td>
+                            <td>Fotografie</td>
+                            <td>$550</td>
+                        </tr>
+                        <tr>
+                            <td>Vodní hladina</td>
+                            <td>Krajina</td>
+                            <td>Lucie Holá</td>
+                            <td>2019</td>
+                            <td>Olej na plátno</td>
+                            <td>$890</td>
+                        </tr>
+                        <tr>
+                            <td>Ve stínu hor</td>
+                            <td>Krajina</td>
+                            <td>Tomáš Navrátil</td>
+                            <td>2022</td>
+                            <td>Akvarel</td>
+                            <td>$500</td>
+                        </tr>
+                        <tr>
+                            <td>Digitální kontrasty</td>
+                            <td>Abstrakce</td>
+                            <td>Kateřina Svobodová</td>
+                            <td>2018</td>
+                            <td>Digitální malba</td>
+                            <td>$670</td>
+                        </tr>
+                        <tr>
+                            <td>Portrét bez obličejů</td>
+                            <td>Portrét</td>
+                            <td>Miroslav Novák</td>
+                            <td>2020</td>
+                            <td>Tuš</td>
+                            <td>$600</td>
+                        </tr>
+                        <tr>
+                            <td>Skrytá symfonie</td>
+                            <td>Abstrakce</td>
+                            <td>Adéla Kovaříková</td>
+                            <td>2017</td>
+                            <td>Mixed Media</td>
+                            <td>$690</td>
+                        </tr>
+                        <tr>
+                            <td>Stříbrný les</td>
+                            <td>Krajina</td>
+                            <td>Jan Marek</td>
+                            <td>2019</td>
+                            <td>Olej na plátno</td>
+                            <td>$920</td>
+                        </tr>
+                        <tr>
+                            <td>Vize budoucnosti</td>
+                            <td>Fantasy</td>
+                            <td>Klára Navrátilová</td>
+                            <td>2021</td>
+                            <td>Digitální kresba</td>
+                            <td>$580</td>
+                        </tr>
+                        <tr>
+                            <td>Proměnlivá realita</td>
+                            <td>Abstrakce</td>
+                            <td>Martin Doležal</td>
+                            <td>2018</td>
+                            <td>Akryl na plátno</td>
+                            <td>$650</td>
+                        </tr>
+                        <tr>
+                            <td>Zvuky deště</td>
+                            <td>Krajina</td>
+                            <td>Elena Svobodová</td>
+                            <td>2020</td>
+                            <td>Akvarel</td>
+                            <td>$480</td>
+                        </tr>
+                        <tr>
+                            <td>Ptačí pohled</td>
+                            <td>Abstrakce</td>
+                            <td>Michal Kovařík</td>
+                            <td>2016</td>
+                            <td>Smíšená technika</td>
+                            <td>$720</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Název obrazu</th>
+                            <th>Typ</th>
+                            <th>Umělec</th>
+                            <th>Rok vytvoření</th>
+                            <th>Technika</th>
+                            <th>Cena</th>
+                        </tr>
+                    </tfoot>
+                </table>
+                
+              </div>  
+            </div>
+          </div>
+
+    </main>
+
+    <footer>
+        <div class="container pt-4">
+          <section class="mb-4">
+            <h5>Sociální sítě:</h5>
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.facebook.com"
+              role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.instagram.com/akiart1/"
+              role="button" data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+          </section>
+        </div>
+        <div class="text-center p-3">
+          <p class="mb-0">&copy; Bootstrap web 2023</p>
+          <p class="mb-0">Vytvořila: Karolína Cibulková</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

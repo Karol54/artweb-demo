@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rwoIxC3A6nJmAzKK5r+L1T+rZz5+5ghvNTR7Ca2bTdM/xutvlph1v8FR6joC5rLt" crossorigin="anonymous">
+
+  <title>Responzivní web</title>
+  <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="./icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html"></a>
+          <img src="./photos/logoWeb.png" height="75" alt="Logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Domů</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Info.html">O mně</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./Galerie.html">Galerie</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="form.html">Formulář</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="datatable.html">Tabulka</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+   
+<main>
+    <nav class="my-breadcrumb" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item purple-text"><a href="index.html">Domů</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Galerie</li>
+      </ol>
+    </nav>
+
+    <div class="container mt-3">
+      <h1 class="text-center">Galerie</h1>
+      <hr class="my-4">
+      <div class="row justify-content-center">
+        <div class="col-md-3">
+          <div class="card mb-3">
+            <img src="./photos/Face1.PNG" class="card-img-top" alt="Portrét" data-bs-toggle="modal" data-bs-target="#modalImage1">
+            <div class="card-body">
+              <p class="card-text">Portrét 33,87 x 33,87 cm - digitální kresba</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="modal fade" id="modalImage1" tabindex="-1" aria-labelledby="modalImage1Label" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalImage1Label">Portrét 33,87 x 33,87 cm - digitální kresba</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./photos/Face1.PNG" class="img-fluid" alt="Portrét">
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-3">
+          <div class="card mb-3">
+            <img src="./photos/4.DŽUNGLE.png" class="card-img-top" alt="Krajina" data-bs-toggle="modal" data-bs-target="#modalImage2">
+            <div class="card-body">
+              <p class="card-text">Krajina 12,7 x 10,16 cm - digitální kresba</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="modal fade" id="modalImage2" tabindex="-1" aria-labelledby="modalImage2Label" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalImage2Label">Krajina 12,7 x 10,16 cm - digitální kresba</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./photos/4.DŽUNGLE.png" class="img-fluid" alt="Krajina">
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-3">
+          <div class="card mb-3">
+            <img src="./photos/drak.png" class="card-img-top" alt="drak" data-bs-toggle="modal" data-bs-target="#modalImage3">
+            <div class="card-body">
+              <p class="card-text">Drak A1 - tradiční malba akrylem</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="modal fade" id="modalImage3" tabindex="-1" aria-labelledby="modalImage3Label" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalImage3Label">Drak A1 - tradiční malba akrylem</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./photos/drak.png" class="img-fluid" alt="Drak A1">
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-3">
+          <div class="card mb-3">
+            <img src="./photos/Oko.png" class="card-img-top" alt="Oko" data-bs-toggle="modal" data-bs-target="#modalImage4">
+            <div class="card-body">
+              <p class="card-text">Oko 25,96 x 25,96 cm - digitální kresba</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="modal fade" id="modalImage4" tabindex="-1" aria-labelledby="modalImage4Label" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalImage4Label">Oko 25,96 x 25,96 cm - digitální kresba</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./photos/Oko.png" class="img-fluid" alt="Oko">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card mb-3">
+              <img src="./photos/skica_face.png" class="card-img-top" alt="skica_face" data-bs-toggle="modal" data-bs-target="#modalImage5">
+              <div class="card-body">
+                    <p class="card-text">Skica portrét 19,9 x 27,06 cm - digitální kresba</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalImage5" tabindex="-1" aria-labelledby="modalImage5Label" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalImage5Label">Skica portrét 19,9 x 27,06 cm - digitální kresba</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./photos/skica_face.png" class="img-fluid" alt="skica_face">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="col-md-3">
+            <div class="card mb-3">
+              <img src="./photos/ruka.png" class="card-img-top" alt="ruka_skica" data-bs-toggle="modal" data-bs-target="#modalImage6">
+              <div class="card-body">
+                    <p class="card-text">Skica ruka 29,7 x 21 cm - digitální kresba</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalImage6" tabindex="-1" aria-labelledby="modalImage6Label" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalImage6Label">Skica ruka 29,7 x 21 cm - digitální kresba</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./photos/ruka.png" class="img-fluid" alt="skica_face">
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card mb-3">
+              <img src="./photos/GFACE.png" class="card-img-top" alt="ruka_skica" data-bs-toggle="modal" data-bs-target="#modalImage7">
+              <div class="card-body">
+                    <p class="card-text">Grafika 88,19 x 40,57 cm - tvorba v Illustratoru</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalImage7" tabindex="-1" aria-labelledby="modalImage7Label" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalImage7Label">Grafika 88,19 x 40,57 cm - tvorba v Illustratoru</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./photos/GFACE.png" class="img-fluid" alt="skica_face">
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-md-3">
+            <div class="card mb-10">
+              <img src="./photos/Darkar.png" class="card-img-top" alt="ruka_skica" data-bs-toggle="modal" data-bs-target="#modalImage8">
+              <div class="card-body">
+                    <p class="card-text">Studie postavy 32,51 x 18,29 cm - digitální kresba</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalImage8" tabindex="-1" aria-labelledby="modalImage8Label" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalImage8Label">Studie postavy 32,51 x 18,29 cm - digitální kresba</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./photos/Darkar.png" class="img-fluid" alt="skica_face">
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="collapse" id="hiddenImages">
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <div class="card mb-10">
+                    <img src="./photos/pták.png" class="card-img-top" alt="ptak" data-bs-toggle="modal" data-bs-target="#modalImage9">
+                    <div class="card-body">
+                        <p class="card-text">Tradiční kresba - A3</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="card mb-10">
+                    <img src="./photos/6.DOBALEDOVÁ.png" class="card-img-top" alt="jablo" data-bs-toggle="modal" data-bs-target="#modalImage11">
+                    <div class="card-body">
+                        <p class="card-text">Krajina 23,44 x 13,92 cm - digitální kresba</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-3">
+                <div class="card mb-10">
+                    <img src="./photos/izuku.png" class="card-img-top" alt="jablo" data-bs-toggle="modal" data-bs-target="#modalImage10">
+                    <div class="card-body">
+                        <p class="card-text">Studie postavy A4 - tradiční kresba pastelky</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+      <div class="text-center">
+        <a href="#hiddenImages" class="btn btn-outline-primary" data-bs-toggle="collapse">
+          Zobrazit více
+          <i class="fa-solid fa-caret-down"></i>
+        </a>
+      </div>
+      <hr class="my-4">
+</main>
+    
+    <footer>
+      <div class="container pt-4">
+        <section class="mb-4">
+          <h5>Sociální sítě:</h5>
+          <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.facebook.com"
+            role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+          <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.instagram.com/akiart1/"
+            role="button" data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+        </section>
+      </div>
+      <div class="text-center p-3">
+        <p class="mb-0">&copy; Bootstrap web 2023</p>
+        <p class="mb-0">Vytvořila: Karolína Cibulková</p>
+      </div>
+    </footer>
+
+</body>
+</html>
